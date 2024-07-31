@@ -1,4 +1,3 @@
-// load-navbar.js
 function loadNavbar() {
     fetch('navbar.html')
         .then(response => response.text())
