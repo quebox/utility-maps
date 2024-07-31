@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        height:100vh;
-      }
-      iframe {
-        border:none;
-        width:100%;
-        height:100%;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base target="_top">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbwhQmkvPHaGkmQa7qe55vfFs3Pz59l8YCg8Im0TVvRxLcuIFfCKFr_Vuamvg9X5DXBk/exec" allow="geolocation *;"></iframe>
+  <body style="background-color:#F5F5F5;">
+    <!-- ナビゲーション -->
+    <?
+      const navigationTemplate = HtmlService.createTemplateFromFile("navigation");
+      navigationTemplate.url = url;
+    ?>
+    <?!= navigationTemplate.evaluate().getContent(); ?>
+    <div class="container-fluid" style="padding-top:100px; width:56%;">
+      <div>
+        <a id="btn01" class="btn btn-outline-primary btn-lg btn-block w-100" href="<?= url ?>/index" role="button">ホーム</a><br>
+        <a id="btn02" class="btn btn-outline-primary btn-lg btn-block w-100" href="<?= url ?>/posterboard" role="button">ポスター掲示場</a><br>
+        <a id="btn04" class="btn btn-outline-primary btn-lg btn-block w-100" href="<?= url ?>/error" role="button">エラーページ</a><br>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <p class="text-center mt-2 mb-3 text-muted">© LearningCircuit All Rights Reserved.</p>
   </body>
 </html>
