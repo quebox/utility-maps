@@ -17,10 +17,6 @@ fetch(
                       <th>pref_id</th>
                       <th>city_id</th>
                       <th>town_id</th>
-                      <th>prefecture</th>
-                      <th>city</th>
-                      <th>town</th>
-                      <th>chome</th>
                       <th>area</th>
                       <th>population</th>
                       <th>households</th>
@@ -33,10 +29,6 @@ fetch(
                     <td>${data[i].pref_id}</td>
                     <td>${data[i].city_id}</td>
                     <td>${data[i].town_id}</td>
-                    <td>${data[i].prefecture}</td>
-                    <td>${data[i].city}</td>
-                    <td>${data[i].town}</td>
-                    <td>${data[i].chome}</td>
                     <td>${data[i].area}</td>
                     <td>${data[i].population}</td>
                     <td>${data[i].households}</td>
