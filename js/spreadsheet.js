@@ -1,5 +1,5 @@
 fetch(
-  `https://script.google.com/macros/s/AKfycbwA7FUnsW_9GtYX_Wl4nDREgabJIovIxASbZclHtzUj8I18V_E/exec`,
+  `https://script.google.com/macros/s/AKfycbwP0axuD8Ctlu_NnUx-etrtBnFDdvvdAROcwxWTmVVeigK6tFeMsAh7apgeSF31QrSUUg/exec`,
   {
     method: "GET"
   }
